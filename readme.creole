@@ -1,0 +1,7 @@
+= Flourish Demo Site
+
+This source code is a simple CMS-style example site that uses Flourish (http://flourishlib.com). The
+[http://flourishlib.com/blog/FlourishDemoSite blog post] has an overview of the site structure and
+how the code is executed.
+
+If you have any questions, please inquire on the [http://flourishlib.com/blog/FlourishDemoSite blog post], [http://flourishlib.com/discussion forum] or [http://webchat.freenode.net/?channels=#flourishlib IRC].

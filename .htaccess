@@ -1,0 +1,38 @@
+Options -Indexes -MultiViews
+Options +FollowSymlinks
+
+#################
+## php settings
+#################
+
+php_flag	register_globals	0
+php_flag	magic_quotes_gpc	0
+
+############
+## routing
+############
+
+RewriteEngine	On
+
+## the real rewrite rules
+RewriteRule		^favicon.ico												sup/img/favicon.ico			[L]
+
+RewriteRule		^$															index.php?type=html			[L]
+RewriteRule		^rss$														index.php?type=rss				[L]
+
+RewriteRule		^(log_in|log_out)$											login.php?action=$1			[L]
+
+RewriteRule		^manage$													manage.php						[L,QSA]
+RewriteRule		^manage/add$												manage.php?action=add			[L]
+RewriteRule		^manage/(\d{4}-\d{2}-\d{2})/(edit|delete)$					manage.php?action=$2&date=$1	[L]
+
+# Prevent access to anything that didn't match so far and isn't in /sup/
+RewriteCond		%{ENV:REDIRECT_STATUS}										^$ 
+RewriteRule		^(?!sup/|robots\.txt).										views/404.php					[L]
+
+#########################
+## performance settings
+#########################
+
+## gzip plaintext being sent to the user
+AddOutputFilterByType	DEFLATE		text/html text/plain application/javascript application/x-javascript text/css

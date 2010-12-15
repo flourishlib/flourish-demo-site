@@ -1,0 +1,323 @@
+/* --------------------------------------------------------------------- */
+/* TABLE OF CONTENTS
+/* --------------------------------------------------------------------- */
+/*
+/*  1.  Browser resets
+/*  2.  Structure
+/*  3.  Content
+/*
+/* --------------------------------------------------------------------- */   
+
+ 
+ 
+/* --------------------------------------------------------------------- */
+/* 1.  Browser resets
+/* --------------------------------------------------------------------- */ 
+
+body, h1, h2, h3, h4, h5, h6, p, hr, pre, code, blockquote, form, fieldset,
+legend, ul, ol, li, table, caption, th, tr, td, thead, tbody, tfoot, div {
+   margin: 0;
+   padding: 0;
+   line-height: 1.8;
+} 
+
+
+/* --------------------------------------------------------------------- */
+/* 2.  Structure
+/* --------------------------------------------------------------------- */
+
+html {
+	background-color: #f1f1f1;
+	font-family: verdana, arial, sans-serif;
+	font-size: 12px;
+	color: #525252;
+}
+
+input, textarea {
+	font-family: verdana, arial, sans-serif;
+	font-size: 12px;
+}
+
+div.bound {
+	width: 900px;
+	padding: 0 25px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+div#header {
+	background-image: url(../img/header_bg.png);
+	background-repeat: repeat-x;
+	background-position: top left;
+}
+
+	div#header a img {
+		display: block;
+	}
+
+div#content {
+	background-image: url(../img/content_bg.png);
+	background-repeat: repeat-x;
+	background-position: top left;
+	overflow: hidden;
+	background-color: #fff;
+}
+	
+	div#content div.bound {
+		padding-bottom: 3em;
+	}
+	
+	div.primary {
+		width: 575px;
+		float: left;
+		padding-bottom: 2em;
+	}
+	
+	div.secondary {
+		width: 249px;
+		float: right;
+		padding-bottom: 2em;
+	}
+
+div#footer {
+	background-image: url(../img/footer_bg.png);
+	background-repeat: repeat-x;
+	background-position: top left;
+	background-color: #f1f1f1;
+	color: #aaa;
+	font-size: 0.9em;
+	padding: 1.0em 0 4.0em 0;
+}
+	div#footer .login {
+		float: right;	
+	}
+
+
+/* --------------------------------------------------------------------- */
+/* 3.  Content
+/* --------------------------------------------------------------------- */ 
+
+h1 {
+	font-family: georgia, times, serif;
+	font-size: 2.4em;
+	color: #525252;
+	font-weight: normal;
+	margin-top: 0.7em;
+}
+
+h2 {
+	font-family: georgia, times, serif;
+	font-size: 2em;
+	color: #7c8857;
+	font-weight: normal;
+	margin-top: 1.0em;
+}
+
+h3 {
+	font-family: georgia, times, serif;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	font-weight: normal;
+	margin-top: 1.0em;
+	color: #444;
+}
+
+p {
+	margin: 1em 0;
+}
+
+ul {
+	margin: 1em 0;
+}
+	li {
+		margin-left: 2.5em;
+	}
+
+a {
+	color: #2763a1;
+}
+
+a:hover {
+	color: #114376;
+}
+
+a img {
+	border: none;
+}
+
+fieldset {
+	margin: 1em 0;
+	padding: 0 1em;
+	border: 1px solid #ccc;
+}
+
+label {
+	display: block;
+	font-weight: bold;
+}
+
+label em {
+	color: #c00;
+}
+
+iframe {
+	width: 575px;
+	height: 300px;
+	border: none;
+	margin-top: 2em;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th {
+	text-align: left;
+	vertical-align: top;
+	border-bottom: 2px solid #ccc;
+	padding: 0.2em 0.4em;
+}
+
+td {
+	border-bottom: 1px dotted #ddd;
+	padding: 0.2em 0.4em;
+}
+
+a img.rss {
+	vertical-align: middle;
+}
+
+div.location {
+	color: #51677d;
+	font-family: arial, sans-serif;
+	font-style: italic;
+	margin-top: -0.3em;
+	font-size: 1.1em;
+}
+	div.location strong {
+		font-style: normal;
+		text-transform: uppercase;
+	}
+
+.success {
+	background: #ecf4d4;
+	padding: 0.5em 1em;
+}
+
+.error {
+	background: #f3e3dc;
+	padding: 0.5em 1em;
+}
+
+	div.error p,
+	div.error ul {
+		margin: 0.4em 0;	
+	}
+
+.info {
+	background: #ecf2f6;
+	padding: 0.5em 1em;
+}	
+
+.warning {
+	background: #f2efd6;
+	padding: 0.5em 1em;
+}
+
+fieldset p {
+	clear: left;
+}
+	
+fieldset p.combo {
+	float: left;
+	clear: none;
+	margin-right: 1em;
+}	
+
+fieldset p.combo.first {
+	clear: left;
+}
+
+input.date {
+	width: 8em;
+}
+
+input.time {
+	width: 6em;
+}	
+
+input.state {
+	width: 2.5em;
+}
+
+input.website {
+	width: 25em;
+}
+
+input.name {
+	width: 15em;
+}
+
+textarea.html {
+	width: 40em;
+	height: 7em;
+}	
+
+textarea.description {
+	width: 40em;
+	height: 10em;
+}
+
+input.delete {
+	margin-right: 2em;
+}
+
+.even {
+	background-color: #f0f0f0;
+}
+
+.odd {
+	background-color: #e9e9e9;
+}
+
+.highlighted {
+	background-color: #ecf4d4;
+}
+
+.even .sorted {
+	background-color: #f7f7f7;
+}
+
+.odd .sorted {
+	background-color: #f0f0f0;
+}
+
+.highlighted .sorted {
+	background-color: #f3f6e9;
+}
+
+th a.sortable_column.asc {
+	padding-right: 20px;
+	background-image: url(../img/down.gif);
+	background-position: right 60%;
+	background-repeat: no-repeat;
+}
+
+th a.sortable_column.desc {
+	padding-right: 20px;
+	background-image: url(../img/up.gif);
+	background-position: right 60%;
+	background-repeat: no-repeat;
+}
+
+p.nav {
+	margin-top: 0;
+}
+
+span.required {
+	padding-left: 2em;
+}
+	span.required em {
+		color: #c00;
+	}	
